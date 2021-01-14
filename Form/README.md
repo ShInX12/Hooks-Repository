@@ -1,7 +1,7 @@
-#useForm
+# useForm
 Hook para manejar el estado de un formulario
 
-###Ejemplo de uso:
+### Ejemplo de uso:
 
 ```
  const initialForm = {
@@ -15,11 +15,15 @@ Hook para manejar el estado de un formulario
  const { age } = formValues;
 ```
 
-###En el template:
+### En el template:
 ```
 <input
     name='age'
     value={ age }
     onChange={ handleInputChange }
     type="text"/>
+    
+...
+    
+<button onClick={ reset }> Reset </button>
 ```
